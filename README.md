@@ -10,13 +10,8 @@ This project involves implementing an ETL pipeline that utilizes the Spotify API
 Client, who is deeply passionate about the music industry, wants to gather music data to identify patterns and trends that will help him create music. 
 To start, he plans to focus on the top 50 Indian songs each week, allowing him to analyze trending genres, and determine which albums and artists are dominating the charts.
 
-# Dataset/API Used
+## Dataset/API Used
 Spotify API: Utilized the Spotify Web API Spotify to retrieve data on songs, albums, and artists. The API provides access to detailed metadata and analytics for various music tracks, allowing for comprehensive data analysis and insights.
-
-## Services Used
-Sure! Here's the completed version with suitable context for Snowpipe and Snowflake:
-
----
 
 ## Services Used
 
@@ -35,5 +30,5 @@ Spotipy: A library for accessing the Spotify Web API.
 Boto3: The AWS SDK for Python, for interacting with AWS services.
 Pandas: A data manipulation and analysis library for Python.
 
-# Project Execution Flow
+## Project Execution Flow
 Extract data from the API → Trigger AWS Lambda weekly → Run extraction code → Store raw data in S3 → Trigger transformation function → Transform data and load it into S3 → Snowpipe automatically ingests the data into designated tables in Snowflake for analysis and querying.
